@@ -1,5 +1,77 @@
-<picture class="imagem_banner imagem_banner--">
-    <img src="imagens/sensor.png" class="imagem_banner--adjust">
-</picture>
--- logo em svg para colocar ao lado do logo no meio ambiente
-<img src="imagens/laptop.svg" style="width: 40px;" />
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+        <h2>Cidade</h2>
+                    <div class="form_group">
+                      <section>
+                        <form id="country-form">
+                            <label for="country-select">País:</label>
+                            <select id="country-select">
+                                <option value="selecione">Selecione um país</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="eua">Estados Unidos</option>
+                                <option value="canada">Canadá</option>
+                                <!-- Adicione mais países aqui -->
+                            </select>
+                    </div>
+        <form id="country-form">
+            <label for="country-select">País:</label>
+            <select id="country-select">
+                <option value="selecione">Selecione um país</option>
+                <option value="brasil">Brasil</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <!-- Adicione mais países aqui -->
+            </select>
+
+            <label for="ddi-select">DDI:</label>
+            <select id="ddi-select" disabled>
+                <option value="selecione">Selecione um DDI</option>
+                <!-- Os DDI correspondentes serão preenchidos aqui usando JavaScript -->
+            </select>
+        </form>
+
+
+    <script>
+        // Mapeamento de DDI para países
+        const ddiPorPais = {
+            brasil: ['55'],
+            eua: ['1'],
+            canada: ['1'],
+            // Adicione mais mapeamentos de países e DDI aqui
+        };
+
+        const countrySelect = document.getElementById('country-select');
+        const ddiSelect = document.getElementById('ddi-select');
+
+        // Event listener para o menu suspenso de países
+        countrySelect.addEventListener('change', function() {
+            const selectedCountry = this.value;
+            const ddis = ddiPorPais[selectedCountry];
+
+            // Limpa o menu suspenso de DDI
+            ddiSelect.innerHTML = '<option value="selecione">Selecione um DDI</option>';
+
+            if (ddis) {
+                // Preenche o menu suspenso de DDI com as opções correspondentes
+                ddis.forEach(ddi => {
+                    const option = document.createElement('option');
+                    option.value = ddi;
+                    option.text = ddi;
+                    ddiSelect.appendChild(option);
+                });
+
+                // Habilita o menu suspenso de DDI
+                ddiSelect.removeAttribute('disabled');
+            } else {
+                // Desabilita o menu suspenso de DDI se nenhum DDI estiver disponível
+                ddiSelect.setAttribute('disabled', true);
+            }
+        });
+    </script>
+</body>
+</html>

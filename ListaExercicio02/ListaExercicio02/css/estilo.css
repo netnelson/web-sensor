@@ -389,7 +389,7 @@ footer {
 .form_input {
     font-size: medium;
     padding: 20px;
-    color: #505050;;
+    color: #896262;;
     border-radius: 10px;
     border: none;
     width: 100%;
@@ -397,7 +397,7 @@ footer {
     border-bottom: 3px solid transparent;
     transition: all .3s;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.05);
-    border: 1px solid #eee;
+    border: 2px solid #afa9a9;
 }
 
 .form_input:focus {
@@ -412,6 +412,7 @@ footer {
     margin-bottom: .7rem;
     display: block;
     transition: all .3s;
+    border: 245px gray #333;
 }
 
 input:placeholder-shown + label { 
