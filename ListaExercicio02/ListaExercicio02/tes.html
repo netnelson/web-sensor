@@ -75,3 +75,102 @@
     </script>
 </body>
 </html>
+
+// pode sr colocado ao lado das imagens da equipe
+<div class="card-equipe-titulo-col2"> nome da equipe <br/> Função da empresa </div>
+
+<div class="contato_group-content"></div>
+<form action="#" class="form">
+
+    <h2>Nome</h2>
+    <div class="form_group">
+        <input type="text" class="form_input" placeholder="" id="nome" name="nome">
+        <label for="nome" class="form_label"> </label>
+    </div>
+
+    <h2>Cargo</h2>
+    <div class="form_group">
+        <input type="text" class="form_input" placeholder="" id="cargo" name="cargo">
+        <label for="cargo" class="form_label"></label>
+    </div>
+
+    <h2>Departamento</h2>
+    <div class="form_group">
+        <input type="text" class="form_input" placeholder="" id="departamento" name="departamento">
+        <label for="nome" class="form_label"></label>
+    </div>
+
+    <h2>Nome da empresa</h2>
+    <div class="form_group">
+        <input type="text"class="form_input" id="empresa" name="empresa">
+        <label for="nome" class="form_label"></label>
+    </div>
+
+    <h2>Cidade</h2>
+    <div class="form_group">
+        <input type="text" class="form_input" id="Cidade" name="cidade">
+        <label for="name" class="form_label"></label>
+    </div>
+
+    <h2>País</h2>
+    <div class="form_group">
+      <section>
+        <select type="text" class="form_input" id="country-form" name="País">
+                <option value="selecione">Selecione um país</option>
+                <option value="brasil">Brasil</option>
+                <option value="eua">Estados Unidos</option>
+                <option value="canada">Canadá</option>
+                <!-- Adicione mais países aqui -->
+            </select>
+    </div>
+
+    <h2>Data de Agendamento</h2>
+    <div class="form_group">
+        <input type="datetime-local" class="form_input" placeholder="" id="Data" name="Data"> 
+        <label for="nome" class="form_label"></label>
+    </div>
+    <h2>E-mail</h2>
+    <div class="form_group">
+        <input type="email" class="form_input" placeholder="" id="email" name="email">
+        <label for="email" class="form_label">  </label>
+    </div>
+    <h2>Assunto</h2>
+    <div class="form_group">
+        <input type="text" class="form_input" placeholder="" id="assunto" name="assunto">
+        <label for="assunto" class="form_label">  </label>
+    </div>
+    <h2>Descrição</h2>
+    <div class="form_group">
+        <textarea class="form_input form_textarea" placeholder="" id="descricao" name="descricao"></textarea>
+        <label for="descricao" class="form_label"> Descrição </label>
+    </div>
+
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Leia e aceite os <a href=""> termos de uso</a> e a política de privacidade.</label>
+      </div>
+
+    <div class="form_btn">
+        <button type="submit"  class="btn--orange btn--square"> Enviar </button>
+    </div>
+
+</form>
+
+
+<script>
+    Video({ video }) {
+       return (
+         <div>
+           <Thumbnail video={video} />
+           <a href="https://www.youtube.com/watch?v=yqozYXnsnRU">
+             <h3>Sensor MQ-2</h3>
+             <p>Este sensor de gás inflamável e fumaça MQ-2 é capaz de detectar concentrações de gases combustíveis e fumaça no ar. Um módulo confiável e simples de usar em seus projetos de automação residencial. Quando a concentração de gases fica acima do nível ajustado pelo potenciômetro, a saída digital D0 fica em estado alto, se abaixo do nível, fica em estado baixo. Uma ótima opção para acionar um microcontrolador ou relés. Para ter uma resolução melhor e medir a variação da concentração dos gases no ar é possível usar a saída analógica A0 e conectar a um conversor AD, como a presente no Arduino e Raspberry Pi por exemplo. Este sensor de gás não foi desenvolvido para aplicações que envolvam segurança humana ou patrimonial e é destinado apenas a propósitos experimentais. A Eletrogate não se responsabiliza por qualquer dano gerado em virtude de sua utilização.</p>
+           </a>
+           <LikeButton video={video} />
+         </div>
+       );
+     }</script>
+
+<div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=yqozYXnsnRU" frameborder="0" allowfullscreen></iframe>
+</div>

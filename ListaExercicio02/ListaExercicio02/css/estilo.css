@@ -55,7 +55,7 @@ nav a {
     text-decoration: none;
     color: #0c4923;
     font-size: large;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
 }
 
@@ -136,7 +136,7 @@ nav a:hover {
 .imagem_banner--2{
     grid-column: 3 / 5;
     grid-row: 1;
-    z-index: 4;
+    z-index: 5;
     animation-name: banner-img-2;
     animation-duration: 3s;  
     animation-fill-mode: forwards;
@@ -161,6 +161,18 @@ nav a:hover {
     box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.2);
     max-width: 100%;
     border-radius: 15px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Ajuste a altura conforme necessário */
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -300,7 +312,7 @@ footer {
     color: #fff;
     text-shadow: 2px 2px 5px rgb(42, 40, 40);
     margin: 20px;
-    width: 400px;
+    width: 380px;
     height: 20px;
 }
 
@@ -309,7 +321,7 @@ footer {
 }
 
 .card-equipe-titulo-col2 {
-    width: 60%;
+    width: 100%;
 }
 
 #cards-equipe-descricao {
@@ -323,8 +335,8 @@ footer {
     align-items: center;
     text-align: center;
     background-color: #fff;
-    margin: 20px;
-    width: 400px;
+    margin: 8px;
+    width: 360px;
     height: 250px;
     border-radius: 5px;
     padding-left: 2%;
@@ -367,6 +379,7 @@ footer {
     display: grid;
     justify-content: center;
     grid-template-columns: 600px;
+    padding: 30px;
 }
 
 .form {
@@ -378,6 +391,8 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 5%;
+    width: auto;
+    height: auto;
 }
 
 .form_textarea{
