@@ -26,19 +26,21 @@ header {
 
 #divExternaCabecalho {
     display: flex;
-    background-color: rgb(247, 159, 7);
+    background-color: #f79f07;
     justify-content: center;    
+    border-bottom-color: rgb(75, 170, 151);
 }
 
 #divInternaCabecalho {
     display: flex;
-    width: 80%;
+    width: 93%;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom-width: 2px;
-    border-bottom-color: rgb(75, 170, 151);
+    border-bottom-color: #0f7937;
     border-bottom-style: solid;
+    height: 100px;
 }
 
 #imagemCabecalho {
@@ -251,7 +253,7 @@ img {
 footer {
     display: flex;
     margin-top: 5%;
-    background-color: #0c4923c7;;
+    background-color: #0c4923;
     justify-content: center;
     color: #ffffffa6;
     padding: 10px;
@@ -472,7 +474,7 @@ textarea:placeholder-shown + label {
 }
 
 .btn--orange:hover {
-    background-color: rgb(248, 176, 112);
+    background-color: #159445;
 }
 
 button {
@@ -525,10 +527,11 @@ button {
    }
 
    .card {
-    width: 1390px;
-    padding: 1.9rem 1.2rem;
+    width: 1190px;
+    padding: 5px;
     text-align: center;
-    background: #2a2b38;
+    background: #ffb026;
+    margin-bottom: -40px;
    }
    
    /*Inputs*/
@@ -538,7 +541,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: .5em;
-    background-color: #1f2029;
+    background-color: white;
     border-radius: 4px;
     padding: .5em 1em;
    }
@@ -551,7 +554,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: .05em;
-    background-color: #1f2029;
+    background-color: white;
     border-radius: 5px;
     padding: .5em 1em;
    }
@@ -588,8 +591,8 @@ button {
     font-size: .8em;
     text-transform: uppercase;
     padding: 0.2em 1.2em;
-    background-color: #ffeba7;
-    color: #5e6681;
+    background-color: #0f7937;
+    color: white;
     box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
     transition: all .3s ease-in-out;
    }
