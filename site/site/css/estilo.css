@@ -528,11 +528,12 @@ button {
    }
 
    .card {
-    width: 1190px;
-    padding: 5px;
+    width: 1090px;
+    padding: 8px;
     text-align: center;
-    background: #ffb026;
-    margin-bottom: -40px;
+    background: #ee9906;
+    margin-bottom: -45px;
+    margin-top: 30px;
    }
    
    /*Inputs*/
@@ -581,7 +582,7 @@ button {
     margin-bottom: 1rem;
     font-size: 2.5em;
     font-weight: 700;
-    color: #0f7937;
+    color: #0e5328;
    }
    
    /*Buttons*/
@@ -622,3 +623,6 @@ button {
     color: #ffeba7;
    }
    
+   ::placeholder {
+    color: green;
+   }
